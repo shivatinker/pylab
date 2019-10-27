@@ -5,7 +5,6 @@ np.set_printoptions(precision=2)
 
 x = np.linspace(0, 2 * np.pi, 50)
 
-# fig, ax = plt.subplots()
 plt.title("Lab #3.2")
 
 ax = plt.subplot(1, 1, 1, polar=True)
