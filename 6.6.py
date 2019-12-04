@@ -19,3 +19,4 @@ print(Ainv.dot(b))
 Q, R = spla.qr(A, mode='economic')
 x = spla.inv(R).dot(Q.T.dot(b))
 print(x)
+
