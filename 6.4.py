@@ -16,3 +16,4 @@ y2 = w[:, 1]  # y'(x)
 y3 = w[:, 2]  # y''(x)
 plt.plot(t, y1, '-r', t, y2, '-g', t, y3, '-b', lw=1)
 plt.show()
+
