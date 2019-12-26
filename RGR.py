@@ -48,10 +48,9 @@ ax = fig.add_subplot(1, 1, 1, projection='3d')
 X = np.linspace(a, b)
 Y = np.linspace(a, b)
 X, Y = np.meshgrid(X, Y)
-ax.plot_wireframe(X, Y, fn(X, Y))
+ax.plot_wireframe(X, Y, fn(X, Y))  # np.where(abs(X) + abs(Y) <= 10, fn(X, Y), 0))
 ax.view_init(70, 75)
 plt.show()
-
 
 # Testing
 def calc(n):
